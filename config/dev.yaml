@@ -1,0 +1,9 @@
+app_env: dev
+port: 8080
+
+db:
+  host: localhost
+  port: 5432
+  user: david.zhou
+  db_name: david_zhou
+  password: Start123

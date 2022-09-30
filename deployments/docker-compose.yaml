@@ -1,0 +1,23 @@
+version: "3.8"
+services: 
+  server:
+    image: davidchou93/wallets/server
+    entrypoint: /app/run
+    ports:
+      - "8080:8080"
+    environment:
+      - APP_ENV=DEV
+      - PORT=:8080
+      - DB_HOST=database
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_DBNAME=wallets
+      - DB_PASSWORD=password
+  database:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=trade
+    ports:
+      - 5432:5432
+    restart: unless-stopped

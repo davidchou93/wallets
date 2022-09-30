@@ -1,0 +1,28 @@
+### Example user template
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+### Go template
+# Binaries for programs and plugins
+bin
+temp
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# local log file
+*.log
+# wire generated file
+wire_gen.go
+
